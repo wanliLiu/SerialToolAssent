@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5D35E2BD-3BFE-4FA5-8DB7-877536DED9B7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SerialToolAssent</RootNamespace>
+    <AssemblyName>SerialToolAssent</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Shazam.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SerialClass.cs" />
+    <Compile Include="SerialTools.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SerialTools.Designer.cs">
+      <DependentUpon>SerialTools.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SerialTools.resx">
+      <DependentUpon>SerialTools.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\B_click.png" />
+    <None Include="Resources\B_on.png" />
+    <None Include="Resources\btndown.png" />
+    <None Include="Resources\btnenter.png" />
+    <None Include="Resources\c_filter.png" />
+    <None Include="Resources\check_mark.png" />
+    <None Include="Resources\clear.png" />
+    <None Include="Resources\cmsMenu.png" />
+    <None Include="Resources\CollageBG.jpg" />
+    <None Include="Resources\collapse.png" />
+    <None Include="Resources\colors.png" />
+    <None Include="Resources\Continue.png" />
+    <None Include="Resources\Coordinator.png" />
+    <None Include="Resources\CoordinatorSelected.png" />
+    <None Include="Resources\cursor_hand.png" />
+    <None Include="Resources\default.png" />
+    <None Include="Resources\delete.png" />
+    <None Include="Resources\document_save.png" />
+    <None Include="Resources\down.png" />
+    <None Include="Resources\edit_redo.png" />
+    <None Include="Resources\edit_undo.png" />
+    <None Include="Resources\exit.png" />
+    <None Include="Resources\expand.png" />
+    <None Include="Resources\FFD.png" />
+    <None Include="Resources\filter.png" />
+    <None Include="Resources\filter_list.png" />
+    <None Include="Resources\hh1.png" />
+    <None Include="Resources\hh2.png" />
+    <None Include="Resources\hh3.png" />
+    <None Include="Resources\icon.png" />
+    <None Include="Resources\icon1.png" />
+    <None Include="Resources\icon2.png" />
+    <None Include="Resources\imgbtn.png" />
+    <None Include="Resources\legend.png" />
+    <None Include="Resources\meaning.png" />
+    <None Include="Resources\Message.png" />
+    <None Include="Resources\movedown.png" />
+    <None Include="Resources\moveup.png" />
+    <None Include="Resources\Multiple.png" />
+    <None Include="Resources\MultiSelect.gif" />
+    <None Include="Resources\netexplorer.png" />
+    <None Include="Resources\network.png" />
+    <None Include="Resources\new.png" />
+    <None Include="Resources\next.png" />
+    <None Include="Resources\open.png" />
+    <None Include="Resources\openSample.png" />
+    <None Include="Resources\Packet.png" />
+    <None Include="Resources\pause.png" />
+    <None Include="Resources\previous.png" />
+    <None Include="Resources\properties.png" />
+    <None Include="Resources\refresh.png" />
+    <None Include="Resources\rf4ce1.png" />
+    <None Include="Resources\rf4ce4.png" />
+    <None Include="Resources\rf4ceRC.png" />
+    <None Include="Resources\rf4ceTV.png" />
+    <None Include="Resources\RFD.png" />
+    <None Include="Resources\Router.png" />
+    <None Include="Resources\sample.png" />
+    <None Include="Resources\save_as.png" />
+    <None Include="Resources\Selected.png" />
+    <None Include="Resources\settings.png" />
+    <None Include="Resources\Single.png" />
+    <None Include="Resources\sort_ascend.png" />
+    <None Include="Resources\sort_descend.png" />
+    <None Include="Resources\start.png" />
+    <None Include="Resources\StartBG.png" />
+    <None Include="Resources\status.png" />
+    <None Include="Resources\stop.png" />
+    <None Include="Resources\things.png" />
+    <None Include="Resources\time_go.png" />
+    <None Include="Resources\tlock.png" />
+    <None Include="Resources\Traffic.png" />
+    <None Include="Resources\Trafficold.png" />
+    <None Include="Resources\Unknown.png" />
+    <None Include="Resources\up.png" />
+    <None Include="Resources\worning.png" />
+    <None Include="Resources\zoom_in.png" />
+    <None Include="Resources\zoom_out.png" />
+    <Content Include="Shazam.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
